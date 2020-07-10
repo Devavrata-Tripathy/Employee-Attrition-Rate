@@ -1,0 +1,31 @@
+                                                                 MACHINE LEARNING CHALLENGE : EMPLOYEE ATTRITION RATE
+                                                                 ----------------------------------------------------
+
+Two datasets were provided , one Train set for training the model and another Test set for testing the accuracy of the model .
+My approach is simple and I tried to tackle the problem in a systematic manner . It can be divided into two parts :
+
+
+1. Understanding the Dataset through Exploratory Data Analysis and Feature Engineering
+   -----------------------------------------------------------------------------------
+-> First I used Exploratory Data Analysis for understanding the dataset . 
+-> Through Visualization and Correlation matrix I came to understand about the correlation among the various features and their influence on the response vector i.e. Attrition_rate
+->I isolated the features with strong correlation and also used feature engineering for manipulating and creating new features with improved correlation .
+->I plotted the various features and identified and rectified the skewness of the data .
+->The most important part is where I manipulated the data so that it would give better results.
+->I seggregated the categorical and numerical data , and individually treated them in a manner which I felt was needed . I used various encoding techniques like label encoding , one hot encoding ,etc .for the categorical data .
+-> Then I experimented a little with them like dropping and adding columns .
+->I tried to define some new features from the exsisting ones in order to improve the correlation .    
+
+
+2. Selection of the model
+   ----------------------
+->I went ahead with scikit learn as it provided with the much needed and indispensible fuctions required for ML models .
+->First I went with the most simple and basic model , Multiple Linear Regression . Upon analysing the dataset I had an intution that multiple linear regression would be better for this purpose . 
+->Then I implemented various other models like Decision Tree , Random Forest , etc. but  I got the best results for linear regression , so I sticked to it .
+-> Then I tried to manipulat and play with the dataset to see whether I could get some better correlated features and accuracy . I replaced the missing values with the mean of the column .
+->I also tried boosting techniques like xgboost for improving the result . I tried to change and adjust the hyperparameters for the best results . 
+->I even tried catboost , lightbgm boosting techniques for getting better results
+
+
+
+
